@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.1/socket.io.js"
+      integrity="sha512-Z6C1p1NIexPj5MsVUunW4pg7uMX6/TT3CUVldmjXx2kpip1eZcrAnxIusDxyFIikyM9A61zOVNgvLr/TGudOQg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Code Akademija chat</h1>
+      </header>
+      <section>
+        <div class="change_username">
+          <input type="text" id="username" />
+          <button id="send_username">Unesi username</button>
+        </div>
+      </section>
+      <section id="chatroom">
+        <div id="feedback"></div>
+      </section>
+      <section id="input_zone">
+        <input type="text" id="message" />
+        <button id="send_message">Posalji poruku</button>
+      </section>
+    </div>
+
+    <script src="js.js"></script>
+  </body>
+</html>
